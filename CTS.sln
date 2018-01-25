@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTS", "CTS\CTS.csproj", "{506F1226-598B-4DAB-9F0F-62BC66B46A53}"
 EndProject
 Global
@@ -13,5 +14,11 @@ Global
 		{506F1226-598B-4DAB-9F0F-62BC66B46A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{506F1226-598B-4DAB-9F0F-62BC66B46A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{506F1226-598B-4DAB-9F0F-62BC66B46A53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A447B438-C536-46FD-B63F-FE7A2BA7115F}
 	EndGlobalSection
 EndGlobal
