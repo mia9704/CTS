@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{506F1226-598B-4DAB-9F0F-62BC66B46A53}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CTS/index.html">
+    <Files>
+      <File FileName="CTS/Web.config" Line="21" Column="14" />
+      <File FileName="CTS/index.html" Line="5" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CTS" expanded="True">
+            <Node name="CTS" expanded="True">
+              <Node name="index.html" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CTS PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

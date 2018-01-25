@@ -1,0 +1,14 @@
+/Users/mmunkhja/Projects/CTS/CTS/bin/CTS.dll
+/Users/mmunkhja/Projects/CTS/CTS/bin/CTS.pdb
+/Users/mmunkhja/Projects/CTS/CTS/bin/Newtonsoft.Json.dll
+/Users/mmunkhja/Projects/CTS/CTS/bin/System.Net.Http.Formatting.dll
+/Users/mmunkhja/Projects/CTS/CTS/bin/System.Web.Http.dll
+/Users/mmunkhja/Projects/CTS/CTS/bin/System.Web.Http.WebHost.dll
+/Users/mmunkhja/Projects/CTS/CTS/bin/System.Net.Http.Formatting.xml
+/Users/mmunkhja/Projects/CTS/CTS/bin/System.Web.Http.xml
+/Users/mmunkhja/Projects/CTS/CTS/bin/System.Web.Http.WebHost.xml
+/Users/mmunkhja/Projects/CTS/CTS/bin/Newtonsoft.Json.xml
+/Users/mmunkhja/Projects/CTS/CTS/obj/Debug/CTS.csprojResolveAssemblyReference.cache
+/Users/mmunkhja/Projects/CTS/CTS/obj/Debug/CTS.csproj.CoreCompileInputs.cache
+/Users/mmunkhja/Projects/CTS/CTS/obj/Debug/CTS.dll
+/Users/mmunkhja/Projects/CTS/CTS/obj/Debug/CTS.pdb
