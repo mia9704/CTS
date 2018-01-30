@@ -26,3 +26,17 @@ C:\Users\JoseGZ-Alpha\Desktop\projects\CTS\CTS\obj\Debug\CTS.csprojResolveAssemb
 C:\Users\JoseGZ-Alpha\Desktop\projects\CTS\CTS\obj\Debug\CTS.csproj.CoreCompileInputs.cache
 C:\Users\JoseGZ-Alpha\Desktop\projects\CTS\CTS\obj\Debug\CTS.dll
 C:\Users\JoseGZ-Alpha\Desktop\projects\CTS\CTS\obj\Debug\CTS.pdb
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\CTS.dll
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\CTS.pdb
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\Newtonsoft.Json.dll
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\System.Net.Http.Formatting.dll
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\System.Web.Http.dll
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\System.Web.Http.WebHost.dll
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\System.Net.Http.Formatting.xml
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\System.Web.Http.xml
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\System.Web.Http.WebHost.xml
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\Newtonsoft.Json.xml
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\obj\Debug\CTS.csprojResolveAssemblyReference.cache
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\obj\Debug\CTS.csproj.CoreCompileInputs.cache
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\obj\Debug\CTS.dll
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\obj\Debug\CTS.pdb
