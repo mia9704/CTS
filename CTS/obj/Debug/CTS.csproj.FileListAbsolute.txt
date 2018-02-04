@@ -54,4 +54,3 @@ C:\Users\mmunkhja\Desktop\CTS\CTS\bin\Newtonsoft.Json.xml
 C:\Users\mmunkhja\Desktop\CTS\CTS\obj\Debug\CTS.csprojResolveAssemblyReference.cache
 C:\Users\mmunkhja\Desktop\CTS\CTS\obj\Debug\CTS.dll
 C:\Users\mmunkhja\Desktop\CTS\CTS\obj\Debug\CTS.pdb
-C:\Users\JoseGZ-Alpha\Desktop\projects\CTS\CTS\bin\CTS.dll.config
