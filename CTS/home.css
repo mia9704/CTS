@@ -1,10 +1,11 @@
 ﻿.vertical-menu {
     width: 200px;
+    border-radius: 4px;
 }
 
 .vertical-menu a {
     background-color: #eee;
-    color: black;
+    color:#696969;
     display: block;
     padding: 12px;
     text-decoration: none;
