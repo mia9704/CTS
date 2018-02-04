@@ -1,3 +1,59 @@
-﻿body
-{
+﻿.contacts {
+    width: 25%;
+    border-radius: 4px;
+    float: right;
+    text-align: center;
+    border-bottom: 5px solid #87CEFA;
+}
+
+.menu {
+    width: 25%;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    border-bottom: 5px solid #87CEFA;
+}
+
+.contacts a, .menu a {
+    background-color: #eee;
+    color: #696969;
+    display: block;
+    padding: 50px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contacts a:hover, .menu a:hover {
+    background-color: #ccc;
+}
+
+.contacts a.active, .menu a.active {
+    background-color: #87CEFA;
+    color: white;
+}
+h1 {
+    text-align:center;
+}
+select {
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+}
+option {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+}
+.postings {
+    margin: auto;
+    width: 50%;
+    display: inline-block;
+}
+ul {
+    list-style-type:none;
 }
