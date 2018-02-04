@@ -19,3 +19,6 @@ body {
 h1 {
     color: #666666;
 }
+div center {
+    text-align: center;
+}

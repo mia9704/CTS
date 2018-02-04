@@ -1,12 +1,14 @@
 ﻿.contacts {
-    width: 200px;
+    width: 300px;
     border-radius: 4px;
     float: right;
+    text-align: center;
 }
 
 .menu {
-    width: 200px;
-    border-radius: 4px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .contacts a, .menu a {
@@ -36,6 +38,7 @@ select {
     display: inline-block;
     font-size: 16px;
     border-radius: 4px;
+    width: 100%;
 }
 option {
     padding: 10px 10px;
