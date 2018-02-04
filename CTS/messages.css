@@ -1,14 +1,6 @@
-﻿.contacts {
+﻿.contacts, .menu {
     width: 15%;
     border-radius: 4px;
-    float: left;
-    text-align: center;
-    border-bottom: 5px solid #87CEFA;
-}
-
-.menu {
-    width: 15%;
-    border-radius: 10px;
     float: left;
     text-align: center;
     border-bottom: 5px solid #87CEFA;
@@ -49,7 +41,7 @@ option {
     border: none;
     border-radius: 4px;
 }
-.postings {
+.messages {
     margin: auto;
     width: 60%;
     float:left;
@@ -61,4 +53,17 @@ ul {
 img {
     height:40px;
     width:40px;
+}
+
+.messages a {
+    background-color: #eee;
+    color: #696969;
+    display: block;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.messages a:hover {
+    background-color: #ccc;
 }
