@@ -55,3 +55,4 @@ C:\Users\mmunkhja\Desktop\CTS\CTS\obj\Debug\CTS.csprojResolveAssemblyReference.c
 C:\Users\mmunkhja\Desktop\CTS\CTS\obj\Debug\CTS.dll
 C:\Users\mmunkhja\Desktop\CTS\CTS\obj\Debug\CTS.pdb
 C:\Users\JoseGZ-Alpha\Desktop\projects\CTS\CTS\bin\CTS.dll.config
+C:\Users\JoseGZ\Desktop\projects\CTS\CTS\bin\CTS.dll.config
