@@ -1,4 +1,8 @@
-﻿.contacts {
+﻿.parent::after {
+    clear: both;
+}
+
+.contacts {
     width: 15%;
     border-radius: 4px;
     float: left;

@@ -1,4 +1,8 @@
-﻿.contacts {
+﻿.parent::after {
+    clear: both;
+}
+
+.contacts {
     width: 15%;
     border-radius: 4px;
     float: left;
@@ -51,7 +55,7 @@ option {
 }
 .options {
     margin: auto;
-    width: 60%;
+    width: 15%;
     float:left;
     padding:5%;
 }
@@ -59,9 +63,12 @@ ul {
     list-style-type:none;
 }
 img {
-    height:400px;
-    width:400px;
+    height:200px;
+    width:200px;
 }
 .info {
-    float:right;
+    margin: auto;
+    width: 35%;
+    float: left;
+    padding: 5%;
 }

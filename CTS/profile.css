@@ -1,4 +1,8 @@
-﻿.contacts {
+﻿.parent::after {
+    clear: both;
+}
+
+.contacts {
     width: 15%;
     border-radius: 4px;
     float: left;
@@ -49,11 +53,11 @@ option {
     border: none;
     border-radius: 4px;
 }
-.offers {
+.profile {
     margin: auto;
     width: 60%;
-    float:left;
-    padding:5%;
+    float: left;
+    padding: 5%;
 }
 ul {
     list-style-type:none;

@@ -24,6 +24,10 @@ input[type=submit]:hover {
     background-color: #87C0FA;
 }
 
+.parent:after {
+    clear: both;
+}
+
 div {
     margin:auto;
     border-radius: 5px;
