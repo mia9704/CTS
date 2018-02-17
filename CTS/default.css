@@ -16,9 +16,14 @@ button :hover {
 
 body {
     font: 16px Arial, sans-serif;
-    color:	#696969;
+    color:	#69696969;
+    background-image: url("bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-h1 {
-    color: #666666;
+h1, h2 {
+    color: #ffffffe0;
+    text-shadow: 0 0 1.64706em #4791f1, 0 0 1.64706em #4791f1, 0 0 1.64706em #4791f1;
+    transition: text-shadow .18s ease-in;
 }
