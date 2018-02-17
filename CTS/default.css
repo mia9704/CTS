@@ -9,16 +9,16 @@
     font-size: 16px;
     border-radius: 4px;
 }
+
 button :hover {
     background-color: #87C0FA;
 }
+
 body {
     font: 16px Arial, sans-serif;
     color:	#696969;
 }
+
 h1 {
     color: #666666;
-}
-div center {
-    text-align: center;
 }

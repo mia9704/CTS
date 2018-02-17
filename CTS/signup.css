@@ -1,4 +1,20 @@
-﻿input[type=text], select {
+﻿.parent:after {
+    clear: both;
+}
+
+.parent {
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 450px;
+    padding: 20px;
+}
+
+.parent p, h1 {
+    text-align: center;
+}
+
+input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -24,17 +40,9 @@ input[type=submit]:hover {
     background-color: #87C0FA;
 }
 
-.parent:after {
-    clear: both;
-}
-
-div {
-    margin:auto;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    width: 400px;
-    padding: 20px;
-}
-p, h1 {
-    text-align:center;
+@media screen and ( max-width: 510px ) {
+    .parent {
+        padding: 5%;
+        width: 90%;
+    }
 }

@@ -1,4 +1,20 @@
-﻿input[type=text], input[type=password], select {
+﻿.parent:after {
+    clear: both;
+}
+
+.parent {
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 300px;
+}
+
+.parent p, h1 {
+    text-align: center;
+}
+
+input[type=text], input[type=password], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -24,17 +40,9 @@ input[type=submit]:hover {
     background-color: #87C0FA;
 }
 
-.parent:after {
-    clear: both;
-}
-
-div {
-    margin:auto;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 300px;
-}
-p, h1 {
-    text-align:center;
+@media screen and ( max-width:350px ) {
+    .parent {
+        padding: 5%;
+        width: 90%;
+    }
 }
