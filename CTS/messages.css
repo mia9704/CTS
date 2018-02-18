@@ -19,6 +19,10 @@
     font-size: 20px;
 }
 
+.card::after {
+    clear: both;
+}
+
 .card {
     border: 2px solid #dedede;
     background-color: #f1f1f1;
@@ -116,6 +120,19 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #87C0FA;
 }
+
+.send {
+    background-color: #87CEFA;
+    border: 1px solid #ccc;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    display: block;
+}
+
 /* .messages a {
     background-color: #eee;
     color: #696969;

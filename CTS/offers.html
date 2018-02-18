@@ -23,22 +23,27 @@
         <div class="offers" id="offers">
             <h2>Offers</h2>
             <div id="offerList">
-                <div class="card" onclick="window.location='offer_details.html';">
-                    <img src="movie.jpg" alt="Avatar">
-                    <h4><b>Movie 1</b></h4>
-                    <p>Someone is interested in your offer</p>
-                </div>
-                <div class="card" onclick="window.location='offer_details.html';">
-                    <img src="movie.jpg" alt="Avatar">
-                    <h4><b>Movie 2</b></h4>
-                    <p>Someone is interested in your offer</p>
-                </div>
+                <a href="offer_details.html" style="display:block">
+                    <div class="card">
+                        <img src="movie.jpg" alt="Avatar">
+                        <h4><b>Movie 1</b></h4>
+                        <p>Someone is interested in your offer</p>
+                    </div>
+                </a>
+                <a href="offer_details.html" style="display:block">
+                    <div class="card">
+                        <img src="movie.jpg" alt="Avatar">
+                        <h4><b>Movie 2</b></h4>
+                        <p>Someone is interested in your offer</p>
+                    </div>
+                </a>
             </div>
+            <br /><br />
             <h2>Create a new offer</h2>
             <p>Offer name: </p>
             <input type="text" id="offername"/>
             <p>Body: </p>
-            <input type="message" id="offerbody"/><br>
+            <input type="text" id="offerbody"/><br /><br />
             <button class="newOffer" onclick="newOffer()">Make new offer</button>
         </div>
         <div class="contacts">

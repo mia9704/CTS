@@ -20,22 +20,65 @@
             <a href="/offers.html">Offers</a>
             <a href="/messages.html">Messages</a>
         </div>
-        <div class="options">
-            <h2>Options</h2>
-            <img src="img_avatar.png" alt="Avatar">
-            <button>Change Image</button>
-        </div>
-        <div class="info">
-            <h3><b>Johnny Depp</b></h3>
-            <p>Actor</p>
-            <p><b>Born: </b></p><p>June 9, 1963</p>
-            <p><b>Movies played: </b></p><p>Edward Scissorhands, Pirates of the Carribean, Sweeney Todd: Demon Barber</p>
-            <p><b>Genres: </b></p><p>Thriller, Action</p>
-            <p><b>Awards and Nominations: </b></p><p>Nominated for 3 Oscars</p>
+        <div class="profile">
+            <h2>Profile</h2>
+            <div class="top_info">
+                <img src="img_avatar.png" alt="avatar" />
+                <button style="display:unset">Change Avatar</button>
+            </div>
+            <div class="bot_info">
+                <h3>Name</h3>
+                <div class="editBlock">
+                    <div class="editEntry">
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="editButton">
+                        <button class="updateButton" type="button" onclick="update('name')">UPDATE</button>
+                    </div>
+                </div>
+
+                <h3>Role</h3>
+                <div class="editBlock">
+                    <div class="editEntry">
+                        <select disabled>
+                            <option id="actor" value="actor">Actor</option>
+                            <option id="agent" value="agent">Agent</option>
+                            <option id="publisher" value="publisher">Producer</option>
+                        </select>
+                    </div>
+                    <div class="editButton">
+                        <button class="updateButton" type="button">UPDATE</button>
+                    </div>
+                </div>
+
+                <h3>Age</h3>
+                <div class="editBlock">
+                    <div class="editEntry">
+                        <input type="text" id="age" />
+                    </div>
+                    <div class="editButton">
+                        <button class="updateButton" type="button" onclick="update('age')">UPDATE</button>
+                    </div>
+                </div>
+
+                <h3>Gender</h3>
+                <div class="editBlock">
+                    <div class="editEntry">
+                        <select id="gender">
+                            <option id="male" value="male">Male</option>
+                            <option id="female" value="female">Female</option>
+                            <option id="other" value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="editButton">
+                        <button class="updateButton" type="button" onclick="update('gender')">UPDATE</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="contacts">
             <h2>Contacts</h2>
-            <select>
+            <select id="contactSelect">
                 <option value="agencies">Agencies</option>
                 <option value="artists">Artists</option>
             </select>
@@ -49,5 +92,25 @@
             <a href="#">Misheelt Munkhjargal</a>
         </div>
     </div>
+
+    <script>
+        document.getElementById("name").value = localStorage.getItem("name");
+        document.getElementById(localStorage.getItem("role")).selected = true;
+        document.getElementById("age").value = localStorage.getItem("age");
+        document.getElementById(localStorage.getItem("gender")).selected = true;
+
+        function update(str) {
+            if (str == 'name')
+                localStorage.setItem("name", document.getElementById("name").value);
+            else if (str == 'age')
+                localStorage.setItem("age", document.getElementById("age").value);
+            else if (str == 'gender')
+                localStorage.setItem("gender", document.getElementById("gender").value);
+            else {
+            }
+
+            window.location.href = "options.html";
+        }
+    </script>
 </body>
 </html>

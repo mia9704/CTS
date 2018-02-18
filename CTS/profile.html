@@ -4,7 +4,9 @@
     <meta charset="utf-8" />
     <meta name="author" content="Misheelt Munkhjargal" />
     <meta name="author" content="Jose Guan Zhou" />
+
     <title>Connect the Stars</title>
+
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="profile.css">
 </head>
@@ -22,18 +24,26 @@
         </div>
         <div class="profile">
             <h2>Profile</h2>
-            <img src="img_avatar.png" alt="Avatar">
-
-            <h3><b>Johnny Depp</b></h3>
-            <p>Actor</p>
-            <p><b>Born: </b></p><p>June 9, 1963</p>
-            <p><b>Movies played: </b></p><p>Edward Scissorhands, Pirates of the Carribean, Sweeney Todd: Demon Barber</p>
-            <p><b>Genres: </b></p><p>Thriller, Action</p>
-            <p><b>Awards and Nominations: </b></p><p>Nominated for 3 Oscars</p>
+            <div class="top_info">
+                <img src="img_avatar.png" alt="avatar" />
+                <h3><b id="name"></b></h3>
+                <p id="role"></p>
+                <p id="age"></p>
+                <p id="gender"></p>
+            </div>
+            <div class="bot_info">
+                <div class="roles">
+                    <h3>Prior Roles</h3>
+                    <nav>
+                        <ul id="roles"></ul>
+                    </nav>
+                </div>
+                <h3>Awards and Nominations</h3>
+            </div>
         </div>
         <div class="contacts">
             <h2>Contacts</h2>
-            <select>
+            <select id="contactSelect">
                 <option value="agencies">Agencies</option>
                 <option value="artists">Artists</option>
             </select>
@@ -47,5 +57,12 @@
             <a href="#">Misheelt Munkhjargal</a>
         </div>
     </div>
+
+    <script>
+        document.getElementById("name").innerHTML = localStorage.getItem("name");
+        document.getElementById("role").innerHTML = localStorage.getItem("role").toUpperCase();
+        document.getElementById("age").innerHTML = "Age: " + localStorage.getItem("age");
+        document.getElementById("gender").innerHTML = localStorage.getItem("gender").toUpperCase();
+    </script>
 </body>
 </html>

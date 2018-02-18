@@ -16,20 +16,56 @@
         <p>Please enter the following information to create an account:</p>
 
         <form action="/home.html">
-            First Name:
-            <input type="text" name="first_name" /><br /><br />
-            Last Name:
-            <input type="text" name="last_name" /><br /><br />
-            Gender:
-            <input type="radio" id="gender_male" name="gender" value="male" />
-            <label for="gender_male">Male</label>
-            <input type="radio" id="gender_female" name="gender" value="female" />
-            <label for="gender_female">Female</label>
-            <input type="radio" id="gender_other" name="gender" value="other" />
-            <label for="gender_other">Other</label>
-            <br /><br />
-            <input type="submit" value="Sign Up">
+            <label for="username">User name:</label>
+            <input type="text" name="username" id="username" /><br /><br />
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" /><br /><br />
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" /><br /><br />
+
+            <div class="multiEntries">
+                <div class="multiEntry" style="float:left">
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br /><br />
+                </div>
+
+                <div class="multiEntry" style="float:right">
+                    <label for="age">Age:</label>
+                    <input type="text" name="age" id="age" />
+                </div>
+            </div>
+
+            <label for="role">Role:</label>
+            <select id="role">
+                <option value="actor">Actor</option>
+                <option value="agent">Agent</option>
+                <option value="publisher">Producer</option>
+            </select><br /><br />
+
+            <button id="submitButton" type="button" onclick="signup()">Sign Up</button>
         </form>
     </div>
+
+    <script>
+        var genderSelect = document.getElementById("gender").selectedIndex;
+        var roleSelect = document.getElementById("role").selectedIndex;
+
+        function signup() {
+            localStorage.setItem("username", document.getElementById("username").value);
+            localStorage.setItem("password", document.getElementById("password").value);
+            localStorage.setItem("name", document.getElementById("name").value);
+            localStorage.setItem("gender", document.getElementById("gender").value);
+            localStorage.setItem("age", document.getElementById("age").value);
+            localStorage.setItem("role", document.getElementById("role").value);
+
+            window.location.href = "home.html";
+        }
+    </script>
 </body>
 </html>
