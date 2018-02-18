@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="home.html" />
+    <Content Include="menu.css" />
     <Content Include="signin.html" />
     <Content Include="signup.html" />
     <Content Include="Web.config" />

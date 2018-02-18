@@ -1,0 +1,31 @@
+﻿.menu::after {
+    clear:both;
+}
+
+.menu {
+    top: 0px;
+    left: 0px;
+    width: 15%;
+    float: left;
+    position: fixed !important;
+    position: absolute;
+    bottom: 0;
+}
+
+.menu a {
+    background-color: #eee;
+    color: #696969;
+    display: block;
+    padding: 50px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #ccc;
+}
+
+.menu a.active {
+    background-color: #87CEFA;
+    color: white;
+}
