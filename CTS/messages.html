@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="messages.css">
 </head>
 <body>
-    <h1>Connect The Stars</h1>
+    <h1 id="title">Connect The Stars</h1>
     <div class="parent">
         <div class="menu">
             <h2>Menu</h2>
@@ -20,23 +20,22 @@
             <a href="/offers.html">Offers</a>
             <a href="/messages.html" class="active">Messages</a>
         </div>
-        <div class="messages">
-            <h2>Messages</h2>
-            <div class="card"> 
-                <img src="img_avatar.png" alt="Avatar" class="left">
-                <p>Hi, how are you doing?</p>
-                <span class="time-left">11:01</span>
+        <div class="messages" id="messages">
+            <div id="msgs">
+                <h2>Messages</h2>
+                <div class="card" id="msg1"> 
+                    <img src="img_avatar.png" alt="Avatar" class="left">
+                    <p>Hi, how are you doing?</p>
+                    <span>11:01</span>
+                </div>
+                <div class="card darker">
+                    <img src="img_avatar.png" alt="Avatar" class="right">
+                    <p>I like apples.</p>
+                    <span>11:01</span>
+                </div>
             </div>
-            <div class="card darker">
-                <img src="img_avatar.png" alt="Avatar" class="right">
-                <p>I like apples.</p>
-                <span class="time-right">11:01</span>
-            </div>
-            <div class="card">
-                <img src="img_avatar.png" alt="Avatar" class="left">
-                <p>How would you like to act in a movie?</p>
-                <span class="time-left">11:01</span>
-            </div>
+            <input type="text" name="message" id="message"/>
+            <button class="send" onclick="sendMsg()">Send</button>
         </div>
         <div class="contacts">
             <h2>Contacts</h2>
@@ -54,5 +53,46 @@
             <a href="#">Misheelt Munkhjargal</a>
         </div>
     </div>
+    <script>
+        window.onload = function () {
+            var messages = localStorage.getItem("messages");
+            for (message in messages) {
+                var msgBox = document.createElement("div");
+                var node = document.createTextNode(message);
+                msgBox.appendChild(node);
+                var element = document.getElementById("msg1").appendChild(msgBox);
+            }
+        }
+        function sendMsg() {
+            var messages = localStorage.getItem("messages");
+            var message = document.getElementById('message').value;
+            /*if (messages === null){
+                localStorage.setItem("messages", [message]);
+            }
+            else {
+                localStorage.setItem("messages", messages.push(message));
+            }*/
+            var msgBox = document.createElement("div");
+            msgBox.className = "card darker";
+            var para = document.createElement("p");
+            var node = document.createTextNode(message);
+            para.appendChild(node);
+            var img = document.createElement("img");
+            img.setAttribute("src", "img_avatar.png");
+            img.className = "right";
+            msgBox.appendChild(img);
+            msgBox.appendChild(para);
+            var time = document.createElement("span");
+            var str = "";
+            var d = new Date();
+            str += d.getHours() + ":"; 
+            str += d.getMinutes(); 
+            var date = document.createTextNode(str);
+            time.appendChild(date);
+            msgBox.appendChild(time);
+            var msgs = document.getElementById("msgs");
+            msgs.appendChild(msgBox);
+        }
+    </script>
 </body>
 </html>

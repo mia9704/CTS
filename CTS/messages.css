@@ -27,15 +27,6 @@
     margin: 10px 0;
 }
 
-.time-right {
-    float: right;
-    color: #aaa;
-}
-
-.time-left {
-    float: left;
-    color: #999;
-}
 .darker {
     border-color: #ccc;
     background-color: #ddd;
@@ -98,7 +89,33 @@ img {
     border-radius: 50%;
 }
 
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    width:80%;
+    display:inline-block;  
 
+}
+input[type=submit] {
+    background-color: #87CEFA;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    width:20%;
+    cursor: pointer;
+    display:inline-block;  
+}
+
+input[type=submit]:hover {
+    background-color: #87C0FA;
+}
 /* .messages a {
     background-color: #eee;
     color: #696969;
