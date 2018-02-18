@@ -23,12 +23,12 @@
         <div class="offers" id="offers">
             <h2>Offers</h2>
             <div id="offerList">
-                <div class="card" onclick="newOffer()">
+                <div class="card" onclick="window.location='offer_details.html';">
                     <img src="movie.jpg" alt="Avatar">
                     <h4><b>Movie 1</b></h4>
                     <p>Someone is interested in your offer</p>
                 </div>
-                <div class="card" onclick="newOffer()">
+                <div class="card" onclick="window.location='offer_details.html';">
                     <img src="movie.jpg" alt="Avatar">
                     <h4><b>Movie 2</b></h4>
                     <p>Someone is interested in your offer</p>
@@ -84,6 +84,7 @@
                 msgBox.appendChild(h4);
                 msgBox.appendChild(para);
                 var msgs = document.getElementById("offerList");
+                msgBox.setAttribute("onclick", "window.location='offer_details.html';");
                 msgs.appendChild(msgBox);
             }
         }

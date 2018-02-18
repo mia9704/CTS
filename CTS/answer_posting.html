@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -21,19 +21,12 @@
             <a href="/messages.html">Messages</a>
         </div>
         <div class="postings">
-            <h2>Postings</h2>
-            <div id="offerList">
-            <div class="card" onclick="window.location='postings_details.html';">
-                <img src="movie.jpg" alt="Avatar">
-                <h4><b>Actress wanted</b></h4>
-                <p>For the movie, Star Wars</p>
-            </div>
-            <div class="card" onclick="window.location='postings_details.html';">
-                <img src="movie.jpg" alt="Avatar">
-                <h4><b>Actor wanted</b></h4>
-                <p>For the movie, Star Wars</p>
-            </div>
-        </div>
+            <h2>Reply to Posting</h2>
+            <p>Subject: </p>
+            <input type="text" id="offername"/>
+            <p>Body: </p>
+            <input type="message" id="offerbody"/><br>
+            <button class="newOffer" onclick="alert('Your message has been successfully sent!'); window.location='postings_details.html';">Send</button>
         </div>
         <div class="contacts">
             <h2>Contacts</h2>

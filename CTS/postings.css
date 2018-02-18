@@ -9,6 +9,13 @@
     text-align: center;
     border-bottom: 5px solid #87CEFA;
 }
+.card {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
 
 .menu {
     width: 15%;
@@ -16,6 +23,18 @@
     float: left;
     text-align: center;
     border-bottom: 5px solid #87CEFA;
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    width:85%;
+    display:inline-block;  
 }
 
 .contacts a, .menu a {
