@@ -97,10 +97,10 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
     margin: 0 auto; 
-    width:80%;
+    width:85%;
     display:inline-block;  
-
 }
+
 input[type=submit] {
     background-color: #87CEFA;
     color: white;

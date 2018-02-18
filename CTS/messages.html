@@ -21,7 +21,7 @@
             <a href="/messages.html" class="active">Messages</a>
         </div>
         <div class="messages" id="messages">
-            <div id="msgs">
+            <div id="msgs" class="msgs">
                 <h2>Messages</h2>
                 <div class="card" id="msg1"> 
                     <img src="img_avatar.png" alt="Avatar" class="left">
@@ -86,6 +86,8 @@
             var str = "";
             var d = new Date();
             str += d.getHours() + ":"; 
+            var minutes = d.getMinutes()
+            if (minutes < 10) str += "0";
             str += d.getMinutes(); 
             var date = document.createTextNode(str);
             time.appendChild(date);

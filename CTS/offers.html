@@ -20,49 +20,29 @@
             <a href="/offers.html" class="active">Offers</a>
             <a href="/messages.html">Messages</a>
         </div>
-        <div class="offers">
+        <div class="offers" id="offers">
             <h2>Offers</h2>
-            <ul>
-                <li>
-                    <div class="card">
-                        <img src="movie.jpg" alt="Avatar">
-                        <div class="container">
-                            <h4><b>Movie 1</b></h4>
-                            <p>Someone is interested in your offer</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="movie.jpg" alt="Avatar">
-                        <div class="container">
-                            <h4><b>Movie 2</b></h4>
-                            <p>Someone is interested in your offer</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="movie.jpg" alt="Avatar">
-                        <div class="container">
-                            <h4><b>Movie 3</b></h4>
-                            <p>Someone is interested in your offer</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="movie.jpg" alt="Avatar">
-                        <div class="container">
-                            <h4><b>Movie 4</b></h4>
-                            <p>Someone is interested in your offer</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div id="offerList">
+                <div class="card" onclick="newOffer()">
+                    <img src="movie.jpg" alt="Avatar">
+                    <h4><b>Movie 1</b></h4>
+                    <p>Someone is interested in your offer</p>
+                </div>
+                <div class="card" onclick="newOffer()">
+                    <img src="movie.jpg" alt="Avatar">
+                    <h4><b>Movie 2</b></h4>
+                    <p>Someone is interested in your offer</p>
+                </div>
+            </div>
+            <h2>Create a new offer</h2>
+            <p>Offer name: </p>
+            <input type="text" id="offername"/>
+            <p>Body: </p>
+            <input type="message" id="offerbody"/><br>
+            <button class="newOffer" onclick="newOffer()">Make new offer</button>
         </div>
         <div class="contacts">
-            <h2>Contacts</h2>
+            <h3>Contacts</h3>
             <select>
                 <option value="agencies">Agencies</option>
                 <option value="artists">Artists</option>
@@ -77,5 +57,36 @@
             <a href="#">Misheelt Munkhjargal</a>
         </div>
     </div>
+    <script>
+        function newOffer() {
+            var offername = document.getElementById("offername").value;
+            var offerbody = document.getElementById("offerbody").value;
+            if (offername === "")
+                alert("Please enter Offer Name");
+            else if (offerbody === "")
+                alert("Please enter Offer Description");
+            else {
+                var list = document.getElementById("list");
+                var item = document.createElement("li");
+                var namenode = document.createTextNode(offername);
+                var bodynode = document.createTextNode(offerbody);
+                var b = document.createElement("b");
+                b.appendChild(namenode);
+                var h4 = document.createElement("h4");
+                h4.appendChild(b);
+                var para = document.createElement("p");
+                para.appendChild(bodynode);
+                var msgBox = document.createElement("div");
+                msgBox.className = "card";
+                var img = document.createElement("img");
+                img.setAttribute("src", "movie.jpg");
+                msgBox.appendChild(img);
+                msgBox.appendChild(h4);
+                msgBox.appendChild(para);
+                var msgs = document.getElementById("offerList");
+                msgs.appendChild(msgBox);
+            }
+        }
+    </script>
 </body>
 </html>
